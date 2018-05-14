@@ -34,7 +34,7 @@ rmsprop = RMSprop(lr=0.001, rho=0.9, decay=0.0)
 
 model.compile(optimizer=rmsprop, loss='categorical_crossentropy', metrics=['accuracy'], )
 
-model.fit(X_train, Y_train, nb_epoch=10, batch_size=32)
+model.fit(X_train, Y_train, nb_epoch=10, batch_size=128)
 
 loss, accuracy = model.evaluate(X_test, Y_test)
 
